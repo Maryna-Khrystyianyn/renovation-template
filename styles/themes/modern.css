@@ -1,0 +1,36 @@
+/* Спільне для всієї теми */
+[data-theme="modern"] {
+    --radius-base: 16px;
+    --shadow-base: 0 8px 30px rgb(0 0 0 / 0.08);
+    --section-padding: 96px;
+    --header-bg: linear-gradient(90deg, var(--gradient-from), var(--gradient-to));
+  }
+  
+  /* Світла */
+  [data-theme="modern"][data-mode="light"] {
+    --bg: #ffffff;
+    --surface: #f6f7f9;
+    --text: #061730;
+    --muted: #687082;
+    --primary: #C99D62;      
+    --primary-contrast: #ffffff;
+    --border: #e5e7eb;
+    /*header */
+    --gradient-from: #ffffff;
+    --gradient-to: #fafaf6;
+    
+  }
+  
+  /* Темна */
+  [data-theme="modern"][data-mode="dark"] {
+    --bg: #0b0f17;
+    --surface: #121826;
+    --text: #f3f4f6;
+    --muted: #9ca3af;
+    --primary: #3b82f6;
+    --primary-contrast: #ffffff;
+    --border: #1f2937;
+     /*header */
+     --gradient-from: #061730;
+     --gradient-to: #0f2649;
+  }
